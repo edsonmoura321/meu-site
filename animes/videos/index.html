@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="player.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="/logo/img.ico" type="image/x-icon">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Animes Online. A melhor maneira de assistir animes online grátis, basta dar play e ver seus animes favoritos em hd, atualizados diariamente.">
+    <meta name="keywords" content="anime, episodios, animes online, otaku, assistir anime online">
+    <title>animotube</title>
+</head>
+<body>
+    <div id="conteudo" > 
+      
+        <div id="c-video" class="active">
+                <div id="colun-menu" class="active">
+                    <div id="menu">
+                        <div id="proximos-ep">
+                            <span id="arrow_drop_down" class="material-icons">
+                                arrow_drop_down
+                                </span>
+                            <h1>proximos episodios</h1>
+                           
+                        </div>
+                        <div id="titulo-ep">
+                          
+
+                        </div>
+                        <div id="home">
+                            <a href="/">
+                                <span class="material-icons">
+                                    home
+                                    </span>
+                            </a>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="menu-btn">
+                        <div id="result-ep">
+                            <div class="colun-result-ep">
+                               
+                                
+                               
+                            </div>
+                        </div>
+                        <span id="menu-btn" class="material-icons">
+                            menu
+                            </span>
+                    </div>
+                   
+                </div>
+                <div id="proximo_EP"> 
+                    
+                </div>
+                <video  class="video" >
+                   
+                
+                     
+              </video>
+             
+              <div id="classplay">
+                
+                <span  id="playvi" class="material-icons">
+                    play_arrow
+                    </span>
+                
+                </div>
+
+            <div class="controle">
+               
+                  
+                <input type="range" class="bar" value="0">
+                        
+                   
+                
+                <div id="button">
+                    <button id="bnd" class="play">
+                        <div id='e'></div>
+                        <span id="pause_circle_filled" class="material-icons">
+                            pause_circle_filled
+                            </span>
+                        
+                    </button>
+                    <div class="update">
+                        <span id="restore" class="material-icons">
+                            restore
+                            </span>
+                        <span id="update" class="material-icons">
+                            update
+                            </span>
+                    </div>   
+                   
+                    
+                   
+                </div>
+                <div class="tempo">
+                    <div class="sl">
+                       
+                     
+                        <div id="volume">
+                          <input type="range" min="0" max="100" value="50" id="myvolume" class="v">
+                            <span id="volume_down" class="material-icons">
+                                volume_down
+                                </span>
+                        </div>
+                        <div class="time">00.00</div>
+                        /
+                        <div class="durantion">00.00</div>
+                    </div>
+                    <span id="watch_later"class="material-icons">
+                        watch_later
+                        </span>
+                <span id="full"class="material-icons">
+                    open_in_full
+                    </span>
+                </div>
+            </div>
+           
+
+
+
+        </div>
+       
+
+         
+      
+        
+    </div>
+    <div class="btn">
+        <button id="Dublado" onclick="dub()">
+            <h1>Dublado</h1>
+
+        </button>
+        <button id="legendado" onclick="legend()">
+            <h1>legendado</h1></button>
+    </div>
+    <div id="proximas_episodios">
+    
+        <div id="colunas-ep">
+            <div id="ep_proximos">
+                
+            
+            
+                <div id="arrow_circle_lef" class="arrow_circle_lef-pesquisa"><span class="material-icons">arrow_circle_left</span></div>
+                <div class="epp">
+                  
+                    <div class="conteudo">
+                 
+               
+                    </div>
+                </div>
+                <div id="arrow_circle_right" class="arrow_circle_right-pesquisa"><span   class="material-icons">arrow_circle_right</span></div>
+
+            </div>
+            <div class="comet">
+                <div id="disqus_thread"></div>
+
+            </div>
+        </div>
+                
+    </div>
+</body>
+
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://animotube.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script src="/animes/videos/videos.js">
+      
+ 
+</script>
+<script>
+   
+        
+   
+
+ 
+</script>
+
+  
+</html> 

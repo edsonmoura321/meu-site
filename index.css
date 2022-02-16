@@ -1,0 +1,567 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background-color: #111;
+    color: #FFF;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#nav{
+    display: flex;
+    position: fixed;
+    background-color: #111;
+    padding-top: 50px;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.7;
+    justify-content: space-between;
+    
+    
+}
+#perfil{
+    display: flex;
+    cursor: pointer;
+}
+#my-hist{
+    display: none;
+    width: 164px;
+    position: absolute;
+    height: 151px;
+    left: -111px;
+    background: black;
+    top: 66px;
+}
+#perfil.active #my-hist{
+    display: inline;
+}
+#my-hist h1{
+  
+        font-size: 21px;
+        font-family: 'Roboto', sans-serif;
+         color: #FFF;
+
+     
+        margin-left: 17px;
+
+    
+}
+#my-hist h1:hover{
+    color: tomato;
+
+}
+#my-hist a{
+    text-decoration: none;
+    border-bottom: 5px solid #999;
+
+}
+.google-translate {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+#google_translate_element {
+    display: none;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+.syno{
+    color:#FFF;
+}
+#info-perfil{
+ 
+      
+        position: relative;
+        top: -25px;
+        right: 21px;
+}
+#person{
+    font-size: 30px;
+}
+#info_anime_{
+    display: none;
+    text-decoration: none;
+}
+#nav  img {
+    width: 200px;
+    position: relative;
+    top: -20px;
+}
+#lista-toda h1 {
+    position: relative;
+    left: 60px;
+    font-size: 30px;
+    max-width: 30px
+
+
+}
+#lista-toda{
+    display:none;
+}
+#lupa {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    cursor: pointer;
+    
+}
+
+
+#login-btn{
+    margin-top: 6px;
+    border: 0;
+    position: relative;
+    left: 13px;
+    padding: 0;
+}
+
+
+
+#lupa:hover{
+    color: tomato;
+}
+#detalhes{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+}
+#conteudo{
+    display: flex;
+  
+    margin-left: 50px;
+    position:relative;
+    overflow-x:hidden;
+    transition: 0.2s;
+    
+}
+#actio, #aventura, #Comedia, #Drama, #Romance{
+  
+    display: flex;
+  
+    margin-left: 50px;
+    position:relative;
+    overflow-x:hidden;
+    transition: 0.2s;
+    
+
+}
+
+#actio.active, #aventura.active,  #Comedia.active, #Drama.active, #Romance.active{
+    overflow-x:visible;
+
+
+}
+
+#conteudo.active {
+    overflow-x:visible;
+
+}
+
+.img-content  img {
+        width: 150px;
+        height: 220px;
+        transform: scale(0.9);
+        cursor: pointer;
+        transition: 0.2s;
+}
+.img-content  p{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    color: white;
+    font-size: 10px;
+
+}
+.img-content img:hover{
+    transform: scale(1);
+    
+}
+#distaque{
+     display: flex;
+     background-image: url('https://swall.teahub.io/photos/small/36-363621_fma-brotherhood-wallpaper-fullmetal-alchemist-brotherhood-wallpaper-4k.jpg');
+
+     height: 100vh;
+     background-size:cover;
+     background-position:center;
+
+ 
+   
+}
+#result {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 300px;
+    transition: 0.2s;
+    overflow-x: hidden;
+    padding-left: 20px;
+
+ 
+
+}
+#result.active {
+    overflow-x: visible;
+}
+#result img {
+    transition: 0.2s;
+    cursor: pointer;
+}
+#result img:hover{
+    transform: scale(1);
+}
+.arrow_circle_right-pesquisa{
+    position: relative;
+    top: 360px;
+    z-index: 9999;
+}
+.arrow_circle_lef-pesquisa{
+    position: relative;
+    top: 360px;
+    z-index: 9999;
+
+}
+.search{
+    display: flex;
+    flex-direction: column;
+}
+.pesqui {
+    display: flex;
+    flex-direction: row;
+}
+#result img {
+    display: flex;
+    flex-direction: row;
+    max-width: 150px;
+    width: 150px;
+    transform: scale(0.9);
+} 
+#pesquisa {
+    display: flex;
+    flex-direction: column;
+}
+#tr {
+    display:flex;
+    width: 200vmax;
+    height:inherit;
+    background: linear-gradient(to top, #111, 75%, transparent 90%);
+    flex-direction: row;
+    position: relative;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+#img-principal {
+    position: relative;
+    left: 60px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#img-principal img {
+    max-width: 200px;
+    max-height: 260px;
+    
+   
+
+}
+h1, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.pontos {
+    display: flex;
+    color: #46d392;
+    position: relative;
+    top: 40px;
+    
+}
+.title {
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 150px;
+   
+   
+}
+#N_EP {
+    display: flex;
+  
+    
+}
+
+#sobre {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+    max-width: 600px;
+    max-height: 300px;
+  
+}
+#sobre  p {
+    color: #FFF;
+}
+.ep {
+    position: relative;
+    left: 15px;
+}
+#arrow_circle_lef{
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    background-color:#111;
+    width: 60px;
+    height: 200px;
+    z-index: 100;
+    align-items: center;
+    
+    
+   
+  
+}
+
+
+
+#arrow_circle_right {
+    
+   
+    position: absolute;
+    opacity: 0.9;
+    background-color: #111;
+    width: 60px;
+    height: 200px;
+    z-index: 100;
+    align-items: center;
+    right:  0 ;
+   
+    
+
+}
+#arrow_circle_right span {
+    display:flex;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 15px;
+    cursor: pointer;
+} 
+#arrow_circle_lef span {
+    display:flex;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 15px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+
+.colun {
+    display: flex;
+    flex-direction: row;
+    transition: 1s;
+}
+
+.G  {
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: space-between;
+}
+.G h1 {
+    position: relative;
+    left: 30px;
+}
+#genero {
+    display:flex;
+    font-size: 15px;
+    position: relative;
+   
+    height: 70px;
+}
+#genero * {
+    padding: 10px;
+}
+#genero h1 {
+   
+    color: #999;
+    position: relative;
+    left: -10px;
+}
+#genero p {
+    position: relative;
+    top: 10px;
+    color:white;
+   
+    
+}
+#info {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    left: 200px;
+    top: 70px;
+    
+}
+#bnd{
+    display: flex;
+    background-color:#FFF;
+    border: 0;
+    border-radius: 3px;
+    width: 100px;
+    height:  50px;
+    align-items: center;
+    transition: 0.2s;
+   
+}
+.link{
+    list-style: none;
+    text-decoration: none;
+}
+#add{
+    display: flex;
+    background-color:#999;
+    border: 0;
+    border-radius: 3px;
+    width: 150px;
+    height:  50px;
+    align-items: center;
+    transition: 0.2s;
+    position: relative;
+    left: 10px;
+
+}
+#add:hover{
+    background-color:#FFF;
+}
+#bnd h1 {
+    font-size: 15px;
+}
+#bnd:hover{
+    background-color: #999;
+}
+
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+
+}
+#pesquisa{
+    display: none;
+    width: 100vmax;
+    height: 0vmax;
+    position: fixed;
+    background: #111;
+    z-index: 999;
+    transition: .5s;
+    opacity: 0.98;
+}
+#pesquisa.active{
+    display: flex;
+    height: 200vmax;
+    flex-direction: row;
+
+    
+}
+#lupa1{
+    position: relative;
+    top: 210px;
+  
+    color: #999;
+    right: 5px;
+    cursor: pointer;
+
+}
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vmax;
+    
+}   
+input {
+    position: relative;
+    top: 200px;
+    left: 30px;
+    width: 700px;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    padding-left: 10px;
+}
+@media only screen and (max-width: 730px) {
+
+    
+  
+    #sobre{
+        display: none;
+    }
+    .G{
+        flex-direction: column;
+    }
+    
+    
+    input {
+        width: 250px;
+     
+    }
+    #lupa {
+        position: absolute;
+        top: 30px;
+       
+       
+    }
+
+}
+
+@media only screen and (max-width: 440px ) {
+    #conteudo, #actio, #aventura, #Comedia, #Drama, #Romance{
+        overflow-x:scroll;
+
+    }
+    body{
+        overflow-x: hidden;
+
+    }
+    #arrow_circle_right{
+        display: none;
+    }
+    #arrow_circle_lef{
+        display: none;
+    }
+    #buttons{
+        flex-direction: column;
+        align-items: inherit;
+    }
+    #buttons *{
+       
+        position: initial;
+
+        
+    }
+    #result {
+        overflow-x: scroll;
+        width: 500px;
+    }
+}
